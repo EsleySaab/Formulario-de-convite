@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--shape-background);
+}
+
+:root {
+  --font-family: "Open Sans", sans-serif;
+  --body-md: 500 16px var(--font-family)
+  --body-sm: 500 14px var(--font-family)
+  --body-xs: 500 12px var(--font-family)
+  --text-body: #C8CDD0;
+  --text-heading: #F9F9F9;
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2D3136;
+  --shape-hover: #383D42;
+  --input-base: #1C1F21;
+  --input-stroke: #363B40;
+  --input-placeholder: #869198;
+  --brand-light: #59B2FF;
+  --brand-mid: #3487CF;
+  --brand-dark: #1D6FB6;
+}
