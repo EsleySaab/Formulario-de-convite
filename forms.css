@@ -1,0 +1,39 @@
+form {
+  margin-top: 1.25rem;
+}
+
+fieldset {
+  border: none;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.input-wrapper {
+  label {
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff8e;
+    font-size: 14px;
+    line-height: auto;
+    font-weight: 400;
+    padding-left: 130px;
+  }
+
+  input {
+    margin-top: 10px;
+    display: block;
+    width: 600px;
+    border-radius: 0.5rem;
+    border: 1px solid var(--input-stroke);
+    padding: 0.9rem 1rem;
+    background-color: var(--input-base);
+    margin-left: 130px;
+  }
+}
+
+input::placeholder {
+  font-family: "Open Sans", sans-serif;
+  color: var(--input-placeholder);
+  font-size: 16px;
+  line-height: auto;
+  font-weight: 400;
+}
