@@ -17,7 +17,7 @@
     <div id="app">
       <aside>
         <div class="aside-container">
-          <img src="assets/Logo.svg" alt="" />
+          <img src="assets/Logo.svg" alt="Logo Festivite" />
           <h1>Festivite</h1>
           <p>Crie um convite digital para o seu evento</p>
         </div>
@@ -30,18 +30,84 @@
           <div class="sobre">
             <img src="./assets/calendar.svg" alt="ícone de calendário" />
             <h2>Sobre o evento</h2>
-          </div> 
-          
+          </div>
+
           <form>
-            <fieldset>
+            <fieldset class="evento">
               <div class="input-wrapper">
                 <label for="title">Título</label>
-                <input id="title" type="text" placeholder="Nome do evento">
+                <input id="title" type="text" placeholder="Nome do evento" />
               </div>
 
+              <div class="date-wrapper">
+                <div class="input-group">
+                  <label for="start-date">Início</label>
+                  <input
+                    placeholder="DD/MM/AAAA, --:--"
+                    type="datetime"
+                    id="start-date"
+                    name="start-date"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="end-date">Fim</label>
+                  <input
+                    type="datetime"
+                    id="end-date"
+                    name="end-date"
+                    placeholder="DD/MM/AAAA, --:--"
+                  />
+                </div>
+              </div>
+
+              <div class="input-class">
+                <div class="toggle-container">
+                  <p>Tipo</p>
+                  <div style="display: flex">
+                    <input
+                      type="radio"
+                      id="option1"
+                      name="toggle"
+                      value="option1"
+                      checked
+                    />
+                    <label for="option1" class="toggle-button">
+                      <img
+                        src="./assets/building-1.svg"
+                        alt=""
+                        class="toggle-icon"
+                      />
+                      Presencial</label
+                    >
+
+                    <input
+                      type="radio"
+                      id="option2"
+                      name="toggle"
+                      value="option2"
+                    />
+                    <label for="option2" class="toggle-button">
+                      <img
+                        src="./assets/video.svg"
+                        alt=""
+                        class="toggle-icon"
+                      />
+                      Online</label
+                    >
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="local">Local</label>
+                  <input
+                    type="text"
+                    name="local"
+                    id="local"
+                    placeholder="Link ou endereço"
+                  />
+                </div>
+              </div>
             </fieldset>
           </form>
-          
         </div>
       </main>
     </div>
