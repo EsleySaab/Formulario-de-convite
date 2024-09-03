@@ -1,0 +1,64 @@
+.persona {
+  display: flex;
+  padding-top: 50px;
+  margin-left: 130px;
+  gap: 10px;
+
+  & h2 {
+    font-family: "Baloo 2", sans-serif;
+    color: var(--text-heading);
+    font-size: 18px;
+    line-height: auto;
+    font-weight: bold;
+  }
+}
+
+.cor {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-heading);
+  font-size: 14px;
+  line-height: auto;
+  font-weight: 400;
+  margin-left: 130px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.radio-label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio-label input[type="radio"] {
+  display: none;
+}
+
+.radio-image {
+  transition: opacity 0.5s ease;
+}
+
+.radio-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  pointer-events: none;
+}
+
+.radio-label input[type="radio"]:checked + .radio-image {
+  opacity: 0.5;
+}
+
+.radio-label input[type="radio"]:checked + .radio-image + .radio-checkmark {
+  border: 1px solid var(--brand-light);
+  border-radius: 50%;
+}
