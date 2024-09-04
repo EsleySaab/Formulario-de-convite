@@ -77,21 +77,26 @@ input::placeholder {
   font-weight: 400;
 }
 
-.toggle-container {
+.toggle-container-1 {
   margin-left: 130px;
   margin-top: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff8e;
+  font-size: 14px;
+  line-height: auto;
+  font-weight: 400;
 }
 
 input[type="radio"] {
   display: none;
 }
 
-.toggle-button {
+.toggle-button-1 {
   margin-top: 16px;
   height: 45px;
   display: flex;
   align-items: center;
-  padding: 10px 33px;
+  padding: 10px 30px;
   border: 1px solid var(--input-stroke);
   border-radius: 8px;
   background-color: var(--input-base);
@@ -102,18 +107,18 @@ input[type="radio"] {
   user-select: none;
 }
 
-input[type="radio"]:checked + .toggle-button {
+input[type="radio"]:checked + .toggle-button-1 {
   background-color: #2d3136;
   color: #fff;
 }
 
-.toggle-button:hover {
+.toggle-button-1:hover {
   background-color: #3a4049;
   color: #fff;
 }
 
 .toggle-icon {
-  width: 20px; 
+  width: 20px;
   height: 20px;
   margin-right: 10px;
 }
@@ -123,7 +128,7 @@ input[type="radio"]:checked + .toggle-button {
   gap: 18px;
 }
 
-.toggle-container p {
+.toggle-container-1 p {
   font-family: "Open Sans", sans-serif;
   color: #ffffff8e;
   font-size: 14px;
