@@ -62,3 +62,53 @@
   border: 1px solid var(--brand-light);
   border-radius: 50%;
 }
+
+.tema p {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-heading);
+  font-size: 14px;
+  line-height: auto;
+  font-weight: 400;
+  margin-left: 130px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 156px);
+  grid-template-rows: repeat(3, auto);
+  margin-left: 130px;
+}
+
+.grid-item {
+  background-color: var(--shape-button);
+  border-radius: 8px;
+  height: 88px;
+  width: 120px;
+  position: relative;
+  border: 2px solid var(--shape-button);
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.grid-item input[type="radio"] {
+  display: none;
+}
+
+.grid-item img {
+  width: 112px;
+  height: auto;
+  margin-bottom: 6px;
+}
+
+.grid-text {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-heading);
+  font-size: 14px;
+  line-height: auto;
+  font-weight: 400;
+}
