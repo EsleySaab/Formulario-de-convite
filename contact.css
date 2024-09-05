@@ -1,0 +1,26 @@
+.contato {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  margin-left: 130px;
+  margin-top: 60px;
+
+  & h2 {
+    font-family: "Baloo 2", sans-serif;
+    color: var(--text-heading);
+    font-size: 18px;
+    line-height: auto;
+    font-weight: bold;
+  }
+}
+
+form {
+  margin-top: 1.25rem;
+}
+
+fieldset {
+  border: none;
+  display: grid;
+  gap: 1.5rem;
+}

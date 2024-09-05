@@ -58,7 +58,7 @@ input::placeholder {
 }
 
 .input-group label {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-family: "Open Sans", sans-serif;
   color: #ffffff8e;
   font-size: 14px;
@@ -183,3 +183,19 @@ input[type="radio"]:checked + .toggle-button-1 {
   padding-left: 16px;
   padding-top: 16px;
 }
+
+ .input-text:invalid:focus:not(:placeholder-shown) ~ .error-message {
+            display: block; /* Exibe a mensagem de erro quando o campo está vazio e em foco */
+        }
+
+        .error-message {
+            color: #d9534f; /* Cor vermelha para a mensagem de erro */
+            font-size: 14px;
+            margin-top: 5px;
+            display: none; /* Oculta a mensagem de erro por padrão */
+        }
+
+        /* A validação CSS usa o atributo required */
+        .input-text:required:valid ~ .error-message {
+            display: none; /* Oculta a mensagem de erro se o campo for preenchido */
+        }

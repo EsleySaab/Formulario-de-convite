@@ -112,7 +112,11 @@
                 <textarea
                   id="message"
                   placeholder="Escreva sobre os detalhes do evento"
+                  required
                 ></textarea>
+                <div class="error-message">
+                  Este campo não pode estar vazio.
+                </div>
               </div>
             </fieldset>
 
@@ -362,6 +366,41 @@
 
                     <p>Selecionar</p>
                   </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <div class="contato">
+                <img src="./assets/contact.svg" alt="" />
+                <h2>Dados para contato</h2>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="Nome completo" required />
+              </div>
+
+              <div class="date-wrapper">
+                <div class="input-group">
+                  <label for="start-date">E-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="exemplo@email.com"
+                    required
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="end-date">Telefone</label>
+                  <input
+                    type="tel"
+                    id="numero"
+                    name="numero"
+                    placeholder="(99) 99999-9999"
+                    required
+                  />
                 </div>
               </div>
             </fieldset>
