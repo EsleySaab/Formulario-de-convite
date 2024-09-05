@@ -33,7 +33,6 @@ fieldset {
       border: 1px solid var(--brand-light);
     }
   }
-
 }
 
 input::placeholder {
@@ -54,11 +53,10 @@ input::placeholder {
 .input-group {
   display: flex;
   flex-direction: column;
-  
 }
 
 .input-group label {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   font-family: "Open Sans", sans-serif;
   color: #ffffff8e;
   font-size: 14px;
@@ -75,8 +73,8 @@ input::placeholder {
   color: white;
 
   &:hover {
-      border: 1px solid var(--brand-light);
-    }
+    border: 1px solid var(--brand-light);
+  }
 }
 
 .input-group input::placeholder {
@@ -184,18 +182,18 @@ input[type="radio"]:checked + .toggle-button-1 {
   padding-top: 16px;
 }
 
- .input-text:invalid:focus:not(:placeholder-shown) ~ .error-message {
-            display: block; /* Exibe a mensagem de erro quando o campo está vazio e em foco */
-        }
+.input-text:invalid:focus:not(:placeholder-shown) ~ .error-message {
+  display: block; /* Exibe a mensagem de erro quando o campo está vazio e em foco */
+}
 
-        .error-message {
-            color: #d9534f; /* Cor vermelha para a mensagem de erro */
-            font-size: 14px;
-            margin-top: 5px;
-            display: none; /* Oculta a mensagem de erro por padrão */
-        }
+.error-message {
+  color: #d9534f; /* Cor vermelha para a mensagem de erro */
+  font-size: 14px;
+  margin-top: 5px;
+  display: none; /* Oculta a mensagem de erro por padrão */
+}
 
-        /* A validação CSS usa o atributo required */
-        .input-text:required:valid ~ .error-message {
-            display: none; /* Oculta a mensagem de erro se o campo for preenchido */
-        }
+/* A validação CSS usa o atributo required */
+.input-text:required:valid ~ .error-message {
+  display: none; /* Oculta a mensagem de erro se o campo for preenchido */
+}
