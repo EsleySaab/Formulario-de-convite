@@ -28,7 +28,12 @@ fieldset {
     background-color: var(--input-base);
     margin-left: 130px;
     color: white;
+
+    &:hover {
+      border: 1px solid var(--brand-light);
+    }
   }
+
 }
 
 input::placeholder {
@@ -49,6 +54,7 @@ input::placeholder {
 .input-group {
   display: flex;
   flex-direction: column;
+  
 }
 
 .input-group label {
@@ -67,6 +73,10 @@ input::placeholder {
   background-color: var(--input-base);
   width: 290px;
   color: white;
+
+  &:hover {
+      border: 1px solid var(--brand-light);
+    }
 }
 
 .input-group input::placeholder {
@@ -157,6 +167,10 @@ input[type="radio"]:checked + .toggle-button-1 {
     border-radius: 8px;
     margin-top: 10px;
     color: white;
+
+    &:hover {
+      border: 1px solid var(--brand-light);
+    }
   }
 }
 
