@@ -93,6 +93,7 @@ input::placeholder {
   font-size: 14px;
   line-height: auto;
   font-weight: 400;
+  margin-right: 10px;
 }
 
 input[type="radio"] {
@@ -118,17 +119,23 @@ input[type="radio"] {
 input[type="radio"]:checked + .toggle-button-1 {
   background-color: #2d3136;
   color: #fff;
+  & svg path {
+    stroke: var(--brand-light);
+  }
 }
 
 .toggle-button-1:hover {
   background-color: #3a4049;
   color: #fff;
+  & svg path {
+    stroke: var(--brand-light);
+  }
 }
 
 .toggle-icon {
   width: 20px;
   height: 20px;
-  margin-right: 10px;
+  margin-right: 4px;
 }
 
 .input-class {

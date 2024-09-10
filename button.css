@@ -1,0 +1,22 @@
+button {
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  background-color: var(--brand-dark);
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-heading);
+  font-size: 16px;
+  line-height: auto;
+  font-weight: 500;
+  gap: 8px;
+  margin-left: 550px;
+  margin-top: 40px;
+}
+
+.button-icon-2 {
+  width: 20px;
+  height: 20px;
+}
